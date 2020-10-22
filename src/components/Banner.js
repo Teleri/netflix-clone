@@ -18,10 +18,9 @@ function Banner() {
     }
     fetchData();
   }, []);
-
-  function truncate(str, n) {
+  const truncate = (str, n) => {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str;
-  }
+  };
 
   return (
     <header
